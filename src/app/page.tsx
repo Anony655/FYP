@@ -9,7 +9,7 @@ export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
   const controls = useAnimation();
   const [ref, inView] = useInView();
-  const audioRef = useRef(null);
+  const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
     setIsLoaded(true);
